@@ -101,7 +101,7 @@ sudo sh -c "echo host > /sys/devices/platform/soc@0/78d9000.usb/ci_hdrc.0/role"
 
 Check if `lsusb` shows your device.
 <p align="center">
-<img src="figs/lsusb.png" width="40%" alt="lsusb-output-rtl-sdr">
+<img src="figs/lsusb.png" width="75%" alt="lsusb-output-rtl-sdr">
 </p>
 
 #### Make USB Host Mode Permanent on Boot
@@ -167,7 +167,7 @@ sudo bash -c "\$(wget -nv -O - https://github.com/wiedehopf/tar1090/raw/master/i
 ```
 Once complete, view live aircraft traffic at `http://<OPENSTICK_IP>/tar1090` (or `http://openstick0.local`) or your terminal using `viewadsb`.
 <p align="center">
-<img src="figs/veiwadsb.png" width="40%" alt="viewadsb">
+<img src="figs/veiwadsb.png" width="75%" alt="viewadsb">
 </p>
 
 #### 3. Install `graphs1090` (Performance & System Stats)
@@ -181,7 +181,7 @@ View performance charts at `http://<OPENSTICK_IP>/graphs1090`.
 > **Resource Footprint:** All three services (`readsb`, `tar1090`, and `graphs1090`) run comfortably on the MSM8916's 512 MB RAM and quad-core Cortex-A53 CPU without choking the system—especially when `zram` is enabled.
 
 <p align="center">
-  <img src="figs/fastfetch-specs.png" width="40%" alt="fastfetch">
+  <img src="figs/fastfetch-specs.png" width="75%" alt="fastfetch">
 </p>
 
 ---
