@@ -1,6 +1,6 @@
 # OpenStick (MSM8916) Flash & ADS-B Receiver Setup Guide
 
-A reference guide for flashing Debian Linux onto a Qualcomm MSM8916 4G LTE USB dongle (`MF800-2` / `FY_MF800_V3.0`) and configuring it as a lightweight, low-power ADS-B flight tracker.
+A reference guide for flashing Debian Linux onto a Qualcomm MSM8916 4G LTE USB dongles (mine is `MF800-2` / `FY_MF800_V3.0` and used as reference here, but this guide applies to any stick supported by OpenStick) and configuring it as a lightweight, low-power ADS-B flight tracker.
 
 ---
 
