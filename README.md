@@ -206,3 +206,6 @@ View performance charts at `http://<OPENSTICK_IP>/graphs1090`.
   | ![10m vs 5m coax cable range](figs/dump1090-localhost-range-24h.png) | ![5m coax cable](figs/dump1090-localhost-range-8h.png) |
 
 * **Avoid Long 5V USB Cables:** Do not compensate for a short coax cable by running a long 5V USB power cable to the roof/outdoors. Standard 5V USB lines suffer significant voltage drop over distance, especially under the combined current draw of an MSM8916 board and an RTL-SDR, leading to undervoltage reboots and crashes. Keep both the USB power cable and coax run short—or if you must mount the unit remotely, run a higher-voltage DC line (e.g., 12V or PoE) with a local 5V buck converter right next to the OpenStick.
+
+## 5. Future
+Since RTL-SDR is working fine, the setup can also be used for any project that uses SDR. I was able to easily compile [`rtl_power_fftw`](https://github.com/AD-Vega/rtl-power-fftw) so I plan to use another dongle for radio astronomy projects such as 21 cm Hydrogen spectrum. I am currently already doing [21 cm neutral Hydrogen line measurements](https://github.com/bkb3/hydrogen-observatory/) in a device running armbian, so I might use another OpenStick device to do something else, maybe pulser hunting!
