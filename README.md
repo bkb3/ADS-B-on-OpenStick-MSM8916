@@ -1,14 +1,16 @@
 # OpenStick (MSM8916) Flash & ADS-B Receiver Setup Guide
 
-A reference guide for flashing Debian Linux onto a Qualcomm MSM8916 4G LTE USB dongles (mine is `MF800-2` / `FY_MF800_V3.0` and used as reference here, but this guide applies to any stick supported by OpenStick) and configuring it as a lightweight, low-power ADS-B flight tracker.
+A reference guide for flashing Debian Linux onto a Qualcomm MSM8916 4G LTE USB dongles (mine is `MF800-2` / `FY_MF800_V3.0` and used as reference here, but this guide applies to any stick supported by OpenStick) and configuring it as a lightweight, low-power ADS-B flight tracker. 
+
+Already flashed OpenStick? Go directly to [Setting Up the ADS-B Receiver](#adsb-setup).
 
 ---
-
+<a name="openstick-setup"></a>
 ## 1. Installing OpenStick
 
 Depending on your hardware revision, choose the appropriate flashing method:
-* **Standard "Stick" Dongles (`UZ801`, `UFI001C`, `UFI003`, `HMUF02`):** Use the automated 1-Click Installer available at [OpenStick.org](https://openstick.org). Simply launch the script for your OS and follow the on-screen prompts.
-* **Multi-LED / LCD Boards (`MF800-2`, etc.):** Use one of the community [OpenStick-Builder](https://github.com/kinsamanka/OpenStick-Builder) forks. While [LongQT-sea's fork](https://github.com/LongQT-sea/OpenStick-Builder/) is widely recommended, it caused bootloops on my `MF800-2` (4-LED variant, PCB marking `FY_MF800_V3.0` — see [Issue #27](https://github.com/LongQT-sea/OpenStick-Builder/issues/27)). The fork by [vernonet](https://github.com/vernonet/OpenStick-Builder) worked reliably on this board.
+* **Standard "Stick" Dongles (`UZ801`, `UFI001C`, `UFI003`, `HMUF02` etc):** Use the automated 1-Click Installer available at [OpenStick.org](https://openstick.org). Simply launch the script for your OS and follow the on-screen prompts.
+* **Other boards not supported by 1-click installer yet:** Use one of the community [OpenStick-Builder](https://github.com/kinsamanka/OpenStick-Builder) forks. While [LongQT-sea's fork](https://github.com/LongQT-sea/OpenStick-Builder/) is widely recommended, it caused bootloops on my `MF800-2` (4-LED variant, PCB marking `FY_MF800_V3.0` — see [Issue #27](https://github.com/LongQT-sea/OpenStick-Builder/issues/27)). The fork by [vernonet](https://github.com/vernonet/OpenStick-Builder) worked reliably on this board. I however, highly recommend to first check if your device is supported by 1-click installer as it is very convenient. 
 
 ### Flashing Unsupported Boards (EDL Backup + Fastboot Method)
 
@@ -59,7 +61,7 @@ Before installing ADS-B software, connect the OpenStick to your Wi-Fi network, s
 * [OpenStick Post-Install Configs](https://github.com/bkb3/OpenStick-post-install-configs)
 
 ---
-
+<a name="adsb-setup"></a>
 ## 2. Setting Up the ADS-B Receiver
 
 ### Hardware Prerequisites
